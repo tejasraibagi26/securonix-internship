@@ -1,0 +1,163 @@
+<section id="data-form">
+  <div class="container">
+    <h1 class="title">Enter Percentage</h1>
+    <form id="data-form" method="post" action="{{action}}">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Establishing threat hunting goals.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="define"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="manage">Current coverage of threat hunting goals.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="manage"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="manage">Hirining personnel dedicated to threat hunting.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="manage"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="manage">Formulating a threat hunting hypothesis.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="manage"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="manage">Acquiring specialized datasets and tools.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="manage"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="manage">Threat hunting training.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="manage"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="manage">SOC members who can develop needed cybersecurity
+              scripts.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="manage"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="manage">Ability to scale threat hunting program.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select
+              id="percentage"
+              class="percentage"
+              name="manage"
+              value="20"
+            ></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="use">Utlzing full packet capture.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="use"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="use">Utlzing windows registry keys.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="use"></select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="use">Utlzing system memory.</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="define">Percentage Of Completion</label>
+            <select id="percentage" class="percentage" name="use"></select>
+          </div>
+        </div>
+      </div>
+      <p align="center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </p>
+    </form>
+  </div>
+  <div id="def" hidden>{{formData.def}}</div>
+  <div id="manage" hidden>{{formData.manage}}</div>
+  <div id="use" hidden>{{formData.use}}</div>
+</section>
+<script src="/public/js/form.js"></script>

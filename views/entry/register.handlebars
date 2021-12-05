@@ -1,0 +1,49 @@
+<section id="login">
+  <div class="container container-fluid">
+    <h1>Register</h1>
+    <form id="login-form" method="post" action="/user/register">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          name="username"
+          aria-describedby="usernameHelp"
+          placeholder="Enter username"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Confirm Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="confirm_password"
+          id="confirm-password"
+          placeholder="Password"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <a href="/" class="btn btn-link">Already have an account? Login.</a>
+    {{#if errors}}
+      <div>
+        <ul>
+          {{#each errors}}
+            <li class="text-danger">{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+  </div>
+</section>

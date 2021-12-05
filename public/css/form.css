@@ -1,0 +1,27 @@
+#data-form {
+  width: 100%;
+}
+
+#data-form .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#data-form .container form {
+  width: 75%;
+}
+
+#data-form .container form .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#data-form .container form .btn {
+  /* width: 50%; */
+  margin-top: 20px;
+}

@@ -1,0 +1,6 @@
+{
+  "mongoConfig": {
+    "serverUrl": "mongodb+srv://internship:Zd7kTNb3XN8hNO6g@cluster0.i6ok2.mongodb.net/test",
+    "database": "securonix"
+  }
+}

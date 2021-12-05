@@ -1,0 +1,7 @@
+#visuals .container {
+  margin-top: 10%;
+}
+
+.container .col-md-6 {
+  border: 1px solid #ccc;
+}
