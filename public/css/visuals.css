@@ -5,3 +5,9 @@
 .container .col-md-6 {
   border: 1px solid #ccc;
 }
+
+@media screen and (max-width: 768px) {
+  #visuals .container {
+    margin-top: 20%;
+  }
+}
