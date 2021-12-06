@@ -15,7 +15,11 @@ router.get("/", async (req, res) => {
       action: "/form/edit",
     });
   }
-  res.render("pages/form", { title: "Form", action: "/form" });
+  res.render("pages/form", {
+    title: "Form",
+    action: "/form",
+    loggedIn: req.session.user ? true : false,
+  });
 });
 
 router.post("/", async (req, res) => {
